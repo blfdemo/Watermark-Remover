@@ -37,7 +37,8 @@ body.editing .top .hero,.top .hero{display:block;padding:0;text-align:left}
 footer.credit,body.editing footer.credit{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;max-width:none;margin:0;padding:0 6px;border:0;text-align:left;font-size:.75rem;color:var(--ink-3)}
 .credit b{font-weight:600;color:var(--ink-2)}
 
-.actions{display:flex;flex-direction:column;gap:18px;padding:18px;overflow-y:auto;scrollbar-width:thin}
+.actions{display:flex;flex-direction:column;gap:18px;padding:18px;overflow-y:auto;overflow-x:hidden;min-width:0;scrollbar-width:thin}
+.actions>*{min-width:0;max-width:100%}
 .actions .panel{padding:0;background:none;box-shadow:none;border-radius:0}
 .actions .opts label{padding:11px 10px}
 #mp4row,#mp4{display:none!important}
@@ -52,9 +53,10 @@ input[type=color]{width:44px;height:30px;padding:2px;border:0;border-radius:8px;
 .dock{margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid var(--line)}
 .dock #bar{margin:0}
 .dock #msg{min-height:2.7em;padding:0;text-align:left;font-size:.8125rem}
-.dock-row{display:flex;gap:10px}
+.dock-row{display:flex;flex-direction:column;gap:10px}
 .dock-row .btn{height:48px}
-.dock-row #go{flex:1}
+.dock-row .btn{width:100%;min-width:0}
+.dock-row #go{flex:none}
 body:not(.editing) .dock-row .btn{opacity:.45;pointer-events:none}
 body.no-loupe #lp{display:none!important}
 
