@@ -9,7 +9,6 @@ GIF → MP4 converter. Everything runs in the browser — no uploads, no backend
 index.html              Page markup
 css/style.css            Design system + all styling (light/dark, tokens, components)
 js/extras.js              Settings, mode switching, shortcuts, extra MP4 options
-css/redesign.css          v7 layout: sidebar, right action bar, dock, theme switch
 js/app.js                 App logic (UI, canvas drawing, GIF/video processing, MP4 export)
 js/vendor/omggif.js       GIF decoder (exposes `OG`)
 js/vendor/gifenc.js       GIF encoder (exposes `GE`)
